@@ -1,5 +1,5 @@
 # simapp
-cli text similarity calculator
+CLI text similarity calculator
 
 # Download
 wget https://github.com/MrDznonyme/simapp/releases/download/v1/Simapp_v1.zip
