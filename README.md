@@ -6,6 +6,7 @@ wget https://github.com/MrDznonyme/simapp/releases/download/v1/Simapp_v1.zip
 
 # Extract
 **Linux**
+
 apt install unzip
 
 unzip Simapp_v1.zip
