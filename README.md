@@ -4,8 +4,7 @@ cli text similarity calculator
 # Download
 wget https://github.com/MrDznonyme/simapp/releases/download/v1/Simapp_v1.zip
 
-# Unzip
-## Linux
+# Extract
 apt install unzip
 
 unzip Simapp_v1.zip
