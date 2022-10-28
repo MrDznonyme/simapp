@@ -1,2 +1,2 @@
 # simapp
-text similarity calculator
+cli text similarity calculator
