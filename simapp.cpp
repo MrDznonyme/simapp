@@ -27,7 +27,7 @@ map<string, int> readFile(string fileName) {
         for (int i=0; i<line.length(); i++){
             
             string ch = "";
-            ch += line[i];
+            ch += tolower(line[i]);
 
             if ((ch != sp) & (int(line[i]) != 13) & (ch.length() > 0)){
                 word += ch;
@@ -89,6 +89,7 @@ int main(int argc, char *argv[]) {
 
     int prod, ta1, ta2 = 0;
     int rep1, rep2 = 0;
+    float ta = 1.0;
     
     for (int i=0; i<keys.size(); i++){
 
@@ -102,10 +103,10 @@ int main(int argc, char *argv[]) {
 
         prod += rep1*rep2;
         ta1 += pow(rep1, 2);
-        ta2 += pow(rep2, 2);
+        ta2 += pow(rep2, 2)
     }
 
-    float sim = prod / (sqrt(ta1) * sqrt(ta2)) * 100;
+    float sim = (prod / (sqrt(ta1) * sqrt(ta2))) * 100;
     cout << sim << "%\n";
 
     return 0;
