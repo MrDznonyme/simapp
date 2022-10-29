@@ -9,7 +9,7 @@ wget https://github.com/MrDznonyme/simapp/files/9892491/Simapp_v2.zip
 
 apt install unzip
 
-unzip Simapp_v1.zip
+unzip Simapp_v2.zip
 
 # Usage
 gcc simapp.cpp -o simapp -lstdc++ -lm
