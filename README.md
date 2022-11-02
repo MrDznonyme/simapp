@@ -17,4 +17,5 @@ gcc simapp.cpp -o simapp -lstdc++ -lm
 ./simapp file1 file2
 
 arguments:
+
 -s : print all words frequent
