@@ -68,6 +68,13 @@ int main(int argc, char *argv[]) {
     f1 = readFile(argv[1]);
     f2 = readFile(argv[2]);
 
+    bool show = false;
+    for (int i = 1; i<argc; i++){
+        if (strcmp(argv[i], "-s") == 0){
+            show = true;
+        }
+    }
+
     vector<string> keys;
 
     for (auto it = f1.begin(); it != f1.end(); ++it) {
@@ -86,7 +93,6 @@ int main(int argc, char *argv[]) {
         }
     }
 
-
     int prod, ta1, ta2 = 0;
     int rep1, rep2 = 0;
     float ta = 1.0;
@@ -99,11 +105,13 @@ int main(int argc, char *argv[]) {
         if (f2.count(keys[i]) == 1){
             rep2 = f2[keys[i]];}else rep2 = 0;
 
-        cout << keys[i] << ": " << rep1 << " | " << rep2 << endl;
+        if (show){
+            cout << keys[i] << ": " << rep1 << " | " << rep2 << endl;
+        }
 
         prod += rep1*rep2;
         ta1 += pow(rep1, 2);
-        ta2 += pow(rep2, 2)
+        ta2 += pow(rep2, 2);
     }
 
     float sim = (prod / (sqrt(ta1) * sqrt(ta2))) * 100;
