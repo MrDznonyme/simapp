@@ -18,4 +18,4 @@ gcc simapp.cpp -o simapp -lstdc++ -lm
 
 arguments:
 
--s : print all words frequent
+-s : print all words frequence
